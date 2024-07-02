@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #219FD5;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+#outputTextContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+#copyText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    display: none;
+    z-index: 2;
+}
+
+#outputTextContainer.has-text:hover #copyText {
+    display: block;
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>Text Case Converter</h1>
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        <div class="buttons">
+            <button onclick="convertText('sentence')">Sentence Case</button>
+            <button onclick="convertText('lower')">Lower Case</button>
+            <button onclick="convertText('upper')">Upper Case</button>
+            <button onclick="convertText('title')">Title Case</button>
+        </div>
+        <div id="outputTextContainer">
+            <textarea id="outputText" readonly placeholder="Your converted text will appear here..."></textarea>
+            <div id="copyText">COPY TO CLIPBOARD</div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by Yosmos 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
